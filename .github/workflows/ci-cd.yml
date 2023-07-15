@@ -8,7 +8,9 @@ jobs:
     steps:
       - name: say hello to boss
         run: echo " Hello Boss How may I help you. "
+
       - name: Download the github Code
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
+
       - name: Print git repo information
         run: echo " ${{ github }} "
