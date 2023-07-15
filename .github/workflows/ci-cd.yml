@@ -1,0 +1,14 @@
+name: "Workflow for Contineous Integration and Deployment."
+
+on: push
+
+jobs:
+  downloading-github-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello to boss
+        run: echo " Hello Boss How may I help you. "
+      - name: Download the github Code
+        run: actions/checkout@v3
+      - name: Print git repo information
+        run: echo " ${{ github }} "
